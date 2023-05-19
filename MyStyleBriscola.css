@@ -11,7 +11,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #1E1E1E;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   font-family: system-ui;
   z-index: 9999;
