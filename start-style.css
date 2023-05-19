@@ -7,21 +7,24 @@ body {
   text-align: center;
   background: #1A1E23;
 }
+
 #container {
     position: relative;
+    
   }
-
+  
   #logonap {
     cursor: pointer;
+    transition: opacity 0.5s;
   }
 
-  #menù {
+  .menù {
+    display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in;
   }
-  .hidden {
-  display: none;
-}
+ 
+
 ul {
   display: flex;
   flex-direction: column;
