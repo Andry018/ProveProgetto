@@ -91,6 +91,7 @@ function VisPunt_onclick() {
 
 function mnuNew_onclick() {
   document.getElementById("mnuNew").disabled = true;
+  document.getElementById("scoreboard").style.display = 'none';
 
   ImgSud0.disabled = true;
 
