@@ -114,18 +114,10 @@ function mnuNew_onclick() {
   Pozzo.style.visibility = "visible";
 
   MovDistribuisci();
-  NascondiStart();
   MostraGioco();
 }
 
-function NascondiStart() {
-  var x = document.getElementById("start");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+
 
 function pulizia() {
   ImgTabNord.src = "images/cards/vuota4.png";
@@ -5051,3 +5043,4 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById("loading").style.visibility = "hidden";
 }, 500);
+

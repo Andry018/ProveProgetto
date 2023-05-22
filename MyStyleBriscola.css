@@ -12,7 +12,7 @@ body{
   position: absolute;
   margin: auto;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   background-color: #1e1e1e;
   display: none;

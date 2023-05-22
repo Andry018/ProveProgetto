@@ -11,7 +11,7 @@
 
 <body>
 <script src="script.js"></script>
-<div class="logobriscola"><img src="/images/logobriscola.png"></img></div>
+<div class="logobriscola"><img src="/images/briscola-logo-500-f5d012fb.png"></img></div>
 <br>
 
 <div class="centeredbox">
@@ -53,7 +53,6 @@
 <input type="text" id="PRESESUD" disabled  size="2" style="visibility: hidden; position:absolute; top:350px; left:500px; TEXT-ALIGN: center">
 
 <input type="button" disabled hidden value="Nuova Partita" id="mnuNew" style="cursor: pointer; font-weight: bold; position: absolute; top: 500px; left: 80px; width: 160px; font-size: 0.90em; text-align: center;" title="Inizia una nuova partita" onclick="mnuNew_onclick();">
-<div id="start"><a href="#" onclick="mnuNew_onclick();"><img src="images/playnow.png" id="img-play"></img></a></div>
 
 </div> <!-- fine centered -->
 </div>
@@ -102,6 +101,7 @@ PreseSud.value = "0";
 
 setTimeout(function(){document.getElementById('mnuNew').disabled = false;},500);
 
+
 //-->
 
 </script>
@@ -117,6 +117,10 @@ setTimeout(function(){document.getElementById('mnuNew').disabled = false;},500);
 <!--
 
 setTimeout(function(){document.getElementById('loading').style.visibility="hidden";},500);
+
+window.onload = function() {
+  mnuNew_onclick();
+}; 
 
 //-->
 
