@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+<title>Progetto Briscola</title>
+
+<link rel="stylesheet" type="text/css" href="MyStyleBriscola.css">
+
+</head>
+
+<body>
+<script src="script.js"></script>
+<div class="logobriscola"><img src="/images/briscola-logo-500-f5d012fb.png"></img></div>
+<br>
+
+<div class="centeredbox">
+<div class="table">
+        
+<div class="scoreboard" id="scoreboard">
+    <div class="scoreboard_name scoreboard_name-G">Tu</div>
+    <div class="scoreboard_name scoreboard_name-c">Computer</div>
+    <div class="scoreboard_score" id="scoreG">0</div>
+    <div class="scoreboard_score" id="scoreC">0</div>
+    <div class="bottone"><button type="button" name="btnContinua" onclick="mnuNew_onclick()">Continua</button></div>
+</div>
+<input type="image" id="IMGNORD0" name="IMGNORD0" alt="carta del PC" disabled src="images/cards/vuota4.png"  style="border: 1px solid #c3c3c378;border-radius:6px;position:absolute;top: 51px;transform: rotate(13deg) rotateY(0deg);left: 224px;left: 229px;">
+
+<input type="image" id="IMGNORD1" name="IMGNORD1" alt="carta del PC" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378; border-radius:6px; position:absolute; top:59px; left:300px">
+
+<input type="image" id="IMGNORD2" name="IMGNORD2" alt="carta del PC" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378;border-radius:6px;position:absolute;top: 53px;transform: rotate(349deg) rotateY(0deg);left: 367px;">
+
+<input type="text" id="PRESENORD" disabled size="2" style=" visibility: hidden; position:absolute; top:50px; left:500px; TEXT-ALIGN: center">
+
+<input type="image" id="TALL" alt="mazzo" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378; border-radius:6px; position:absolute; top:200px; left:70px; z-index:2">
+
+<input type="text" id="lblQCaTall" disabled size="2" style="position:absolute;top:270px;height: 2em;width: 2em;left: 141px;TEXT-ALIGN: center;border-radius: 100%;background: #000000b0;color: white;FONT-WEIGHT: 800;border: 1px;border-color: white;border-style: double;">
+
+<input type="image" id="POZZO" alt="carta in terra" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378; border-radius:6px; position:absolute; top:150px; left:100px; z-index:1">
+
+<input type="image" id="IMGtabNORD" alt="carta giocata dal PC" disabled src="images/cards/vuota4.png" style=" border-radius:6px; position:absolute; top:200px; left:250px">
+
+<input type="image" id="IMGtabSUD" alt="carta giocata da te" disabled src="images/cards/vuota4.png" style="border-radius:6px; position:absolute; top:200px; left:350px">
+
+<input type="image" id="TRANSFER" alt="carta trasferimento" disabled style="border: 1px solid #c3c3c378; border-radius:6px; position:absolute; top:200px; left:600px; z-index:3; visibility:hidden">
+
+<input type="image" id="IMGSUD0" alt="una tua carta" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378;border-radius:6px;position:absolute;top: 358px;left: 232px;transform: rotate(345deg) rotateY(0deg);CURSOR: pointer" onclick="IMGSUD0_onmousedown();">
+
+<input type="image" id="IMGSUD1" alt="una tua carta" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378; border-radius:6px; position:absolute; top:350px; left:300px; CURSOR: pointer" onclick="IMGSUD1_onmousedown();">
+
+<input type="image" id="IMGSUD2" alt="una tua carta" disabled src="images/cards/vuota4.png" style="border: 1px solid #c3c3c378;border-radius:6px;position:absolute;top: 358px;left: 313px;left: 368px;transform: rotate(14deg) rotateY(0deg);SOR: pointer" onclick="IMGSUD2_onmousedown();">
+
+<input type="text" id="PRESESUD" disabled  size="2" style="visibility: hidden; position:absolute; top:350px; left:500px; TEXT-ALIGN: center">
+
+<input type="button" disabled hidden value="Nuova Partita" id="mnuNew" style="cursor: pointer; font-weight: bold; position: absolute; top: 500px; left: 80px; width: 160px; font-size: 0.90em; text-align: center;" title="Inizia una nuova partita" onclick="mnuNew_onclick();">
+
+</div> <!-- fine centered -->
+</div>
+
+<script>
+
+<!--
+
+var ImgNord0 = document.getElementById("IMGNORD0");
+
+var ImgNord1 = document.getElementById("IMGNORD1");
+
+var ImgNord2 = document.getElementById("IMGNORD2");
+
+var ImgSud0 = document.getElementById("IMGSUD0");
+
+var ImgSud1 = document.getElementById("IMGSUD1");
+
+var ImgSud2 = document.getElementById("IMGSUD2");
+
+var Tall = document.getElementById("TALL");
+
+var Pozzo = document.getElementById("POZZO");
+
+var ImgTabNord = document.getElementById("IMGtabNORD");
+
+var ImgTabSud = document.getElementById("IMGtabSUD");
+
+var PreseNord = document.getElementById("PRESENORD");
+
+var PreseSud = document.getElementById("PRESESUD");
+
+var Transfer = document.getElementById("TRANSFER");
+
+var lblQCaTall = document.getElementById("lblQCaTall");
+
+QCaTall = 40;
+
+lblQCaTall.value = QCaTall;
+
+PreseNord.value = "0";
+
+PreseSud.value = "0";
+
+//document.getElementById("mnuNew").disabled = false;
+
+setTimeout(function(){document.getElementById('mnuNew').disabled = false;},500);
+
+
+//-->
+
+</script>
+
+<form style="position: absolute; top: 0px; visibility: hidden" id="frmOne" name = frmOne>
+
+<textarea id="taAll" name = taAll rows = 10 cols = 30></textarea>
+
+</form>
+
+<script>
+
+<!--
+
+setTimeout(function(){document.getElementById('loading').style.visibility="hidden";},500);
+
+window.onload = function() {
+  mnuNew_onclick();
+}; 
+
+//-->
+
+</script>
+
+</body>
+
+</html>
+
+
+
