@@ -71,24 +71,6 @@ var nDopo;
 
 var sDopo;
 
-function VisPunt_onclick() {
-  if (document.getElementById("PRESESUD").style.visibility == "visible") {
-    document.getElementById("PRESESUD").style.visibility = "hidden";
-
-    document.getElementById("PRESENORD").style.visibility = "hidden";
-
-    document.getElementById("VisPunt").value = "Visualizza punteggio";
-
-    return;
-  }
-
-  document.getElementById("PRESESUD").style.visibility = "visible";
-
-  document.getElementById("PRESENORD").style.visibility = "visible";
-
-  document.getElementById("VisPunt").value = "Nascondi punteggio";
-}
-
 function mnuNew_onclick() {
   document.getElementById("mnuNew").disabled = true;
   document.getElementById("scoreboard").style.display = 'none';
@@ -146,21 +128,21 @@ function NascondiStart() {
 }
 
 function pulizia() {
-  ImgTabNord.src = "images/cards/vuota.png";
+  ImgTabNord.src = "images/cards/vuota4.png";
 
-  ImgTabSud.src = "images/cards/vuota.png";
+  ImgTabSud.src = "images/cards/vuota4.png";
 
-  ImgSud0.src = "images/cards/vuota.png";
+  ImgSud0.src = "images/cards/vuota4.png";
 
-  ImgSud1.src = "images/cards/vuota.png";
+  ImgSud1.src = "images/cards/vuota4.png";
 
-  ImgSud2.src = "images/cards/vuota.png";
+  ImgSud2.src = "images/cards/vuota4.png";
 
-  ImgNord0.src = "images/cards/vuota.png";
+  ImgNord0.src = "images/cards/vuota4.png";
 
-  ImgNord1.src = "images/cards/vuota.png";
+  ImgNord1.src = "images/cards/vuota4.png";
 
-  ImgNord2.src = "images/cards/vuota.png";
+  ImgNord2.src = "images/cards/vuota4.png";
 
   Tall.src = "images/cards/back.png";
 
@@ -600,7 +582,7 @@ function IMGSUD0_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud0.src = "images/cards/vuota.png";
+  ImgSud0.src = "images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -630,7 +612,7 @@ function IMGSUD1_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud1.src = "images/cards/vuota.png";
+  ImgSud1.src = "images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -660,7 +642,7 @@ function IMGSUD2_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud2.src = "images/cards/vuota.png";
+  ImgSud2.src = "images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -858,7 +840,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -882,7 +864,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -906,7 +888,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -949,7 +931,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -973,7 +955,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -997,7 +979,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1041,7 +1023,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1065,7 +1047,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1089,7 +1071,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1132,7 +1114,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1156,7 +1138,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1180,7 +1162,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1224,7 +1206,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1248,7 +1230,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1272,7 +1254,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1316,7 +1298,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1340,7 +1322,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1364,7 +1346,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1406,7 +1388,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1430,7 +1412,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1454,7 +1436,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1496,7 +1478,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1520,7 +1502,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1544,7 +1526,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1590,7 +1572,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1614,7 +1596,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1638,7 +1620,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1681,7 +1663,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1705,7 +1687,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1729,7 +1711,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1772,7 +1754,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1796,7 +1778,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1820,7 +1802,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1863,7 +1845,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1887,7 +1869,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1911,7 +1893,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1954,7 +1936,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1978,7 +1960,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2002,7 +1984,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2045,7 +2027,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2069,7 +2051,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2093,7 +2075,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2136,7 +2118,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2160,7 +2142,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2184,7 +2166,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2228,7 +2210,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2252,7 +2234,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2276,7 +2258,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2317,7 +2299,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2341,7 +2323,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2365,7 +2347,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2407,7 +2389,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2431,7 +2413,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2455,7 +2437,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2497,7 +2479,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2521,7 +2503,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2545,7 +2527,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2587,7 +2569,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2611,7 +2593,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2635,7 +2617,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2679,7 +2661,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2703,7 +2685,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2727,7 +2709,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2769,7 +2751,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2793,7 +2775,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2817,7 +2799,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2859,7 +2841,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2883,7 +2865,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2907,7 +2889,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2952,7 +2934,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2976,7 +2958,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3000,7 +2982,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3042,7 +3024,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3066,7 +3048,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3090,7 +3072,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3135,7 +3117,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3159,7 +3141,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3183,7 +3165,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3225,7 +3207,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3249,7 +3231,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3273,7 +3255,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3315,7 +3297,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3339,7 +3321,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3363,7 +3345,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3405,7 +3387,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3429,7 +3411,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3453,7 +3435,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3495,7 +3477,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3519,7 +3501,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3543,7 +3525,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3585,7 +3567,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3609,7 +3591,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3633,7 +3615,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3667,7 +3649,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord0.src = "images/cards/vuota.png";
+        ImgNord0.src = "images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3691,7 +3673,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord1.src = "images/cards/vuota.png";
+        ImgNord1.src = "images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3715,7 +3697,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord2.src = "images/cards/vuota.png";
+        ImgNord2.src = "images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3955,7 +3937,7 @@ function Decide_chi_prende() {
 
     Transfer.style.visibility = "visible";
 
-    ImgTabNord.src = "images/cards/vuota.png";
+    ImgTabNord.src = "images/cards/vuota4.png";
 
     PuntNord = PuntNord + PuntMano;
 
@@ -3979,7 +3961,7 @@ function Decide_chi_prende() {
 
     Transfer.style.visibility = "visible";
 
-    ImgTabSud.src = "images/cards/vuota.png";
+    ImgTabSud.src = "images/cards/vuota4.png";
 
     PuntSud = PuntSud + PuntMano;
 
@@ -4093,7 +4075,7 @@ function Nord() {
 
             LeftPos = 200;
 
-            ImgNord0.src = "images/cards/vuota.png";
+            ImgNord0.src = "images/cards/vuota4.png";
 
             N0Tall();
           }
@@ -4103,19 +4085,19 @@ function Nord() {
 
             LeftPos = 300;
 
-            ImgNord1.src = "images/cards/vuota.png";
+            ImgNord1.src = "images/cards/vuota4.png";
 
             N1Tall();
           }
 
           if (P == 2) {
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             TopPos = 50;
 
             LeftPos = 400;
 
-            ImgNord2.src = "images/cards/vuota.png";
+            ImgNord2.src = "images/cards/vuota4.png";
 
             N2Tall();
           }
@@ -4145,7 +4127,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4155,7 +4137,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4165,7 +4147,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4194,7 +4176,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4204,7 +4186,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4214,7 +4196,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4243,7 +4225,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4253,7 +4235,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4263,7 +4245,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4292,7 +4274,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4302,7 +4284,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4312,7 +4294,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4341,7 +4323,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4351,7 +4333,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4361,7 +4343,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4390,7 +4372,7 @@ function Nord() {
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota.png";
+          ImgNord0.src = "images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4400,7 +4382,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota.png";
+          ImgNord1.src = "images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4410,7 +4392,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota.png";
+          ImgNord2.src = "images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4447,7 +4429,7 @@ function N0Tall() {
 
     Transfer.src = "images/cards/back.png";
 
-    ImgNord0.src = "images/cards/vuota.png";
+    ImgNord0.src = "images/cards/vuota4.png";
 
     CaNord[0] = 0;
 
@@ -4483,7 +4465,7 @@ function N1Tall() {
 
     Transfer.src = "images/cards/back.png";
 
-    ImgNord1.src = "images/cards/vuota.png";
+    ImgNord1.src = "images/cards/vuota4.png";
 
     CaNord[1] = 0;
 
@@ -4527,7 +4509,7 @@ function N2Tall() {
 
     Transfer.src = "images/cards/back.png";
 
-    ImgNord2.src = "images/cards/vuota.png";
+    ImgNord2.src = "images/cards/vuota4.png";
 
     CaNord[2] = 0;
 
@@ -4555,9 +4537,9 @@ function Nord_su_Sud() {
   } else {
     clearTimeout(myTimerNord_su_Sud);
 
-    ImgTabSud.src = "images/cards/vuota.png";
+    ImgTabSud.src = "images/cards/vuota4.png";
 
-    ImgTabNord.src = "images/cards/vuota.png";
+    ImgTabNord.src = "images/cards/vuota4.png";
 
     Transfer.style.visibility = "hidden";
 
@@ -4583,9 +4565,9 @@ function Sud_su_Nord() {
   } else {
     clearTimeout(myTimerSud_su_Nord);
 
-    ImgTabSud.src = "images/cards/vuota.png";
+    ImgTabSud.src = "images/cards/vuota4.png";
 
-    ImgTabNord.src = "images/cards/vuota.png";
+    ImgTabNord.src = "images/cards/vuota4.png";
 
     Transfer.style.visibility = "hidden";
 
@@ -4953,7 +4935,7 @@ function DopoS2() {
 
 function Carte_finite() {
   if (QCaTall == 1) {
-    Pozzo.src = "images/cards/vuota.png";
+    Pozzo.src = "images/cards/vuota4.png";
   }
 
   if (QCaTall == 1) {
@@ -5007,14 +4989,14 @@ function Fine() {
   divScoreC.textContent = PuntNord;
   divScoreG.textContent = PuntSud; 
 
-  /*if (
+  if (
     CaNord[0] == 0 &&
     CaNord[1] == 0 &&
     CaNord[2] == 0 &&
     CaSud[0] == 0 &&
     CaSud[1] == 0 &&
     CaSud[2] == 0
-  ) {*/
+  ) {
    
     if (scoreboard.style.display == "none") {
       scoreboard.style.display = "grid";
@@ -5024,7 +5006,7 @@ function Fine() {
     
   document.getElementById("mnuNew").disabled = false;
  
-}
+}}
 
 var ImgNord0 = document.getElementById("IMGNORD0");
 
