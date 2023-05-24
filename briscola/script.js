@@ -107,7 +107,7 @@ function mnuNew_onclick() {
     FlagPrimoMano = "Sud";
   }
 
-  Pozzo.src = "images/cards/" + CaTall[1] + ".png";
+  Pozzo.src = "../../images/cards/" + CaTall[1] + ".png";
 
   SB = Math.round(CaTall[1] / 100);
 
@@ -120,23 +120,23 @@ function mnuNew_onclick() {
 
 
 function pulizia() {
-  ImgTabNord.src = "images/cards/vuota4.png";
+  ImgTabNord.src = "../images/cards/vuota4.png";
 
-  ImgTabSud.src = "images/cards/vuota4.png";
+  ImgTabSud.src = "../images/cards/vuota4.png";
 
-  ImgSud0.src = "images/cards/vuota4.png";
+  ImgSud0.src = "../images/cards/vuota4.png";
 
-  ImgSud1.src = "images/cards/vuota4.png";
+  ImgSud1.src = "../images/cards/vuota4.png";
 
-  ImgSud2.src = "images/cards/vuota4.png";
+  ImgSud2.src = "../images/cards/vuota4.png";
 
-  ImgNord0.src = "images/cards/vuota4.png";
+  ImgNord0.src = "../images/cards/vuota4.png";
 
-  ImgNord1.src = "images/cards/vuota4.png";
+  ImgNord1.src = "../images/cards/vuota4.png";
 
-  ImgNord2.src = "images/cards/vuota4.png";
+  ImgNord2.src = "../images/cards/vuota4.png";
 
-  Tall.src = "images/cards/back.png";
+  Tall.src = "../images/cards/back.png";
 
   CaImgTabNord = 0;
 
@@ -274,7 +274,7 @@ function ripetizione() {
 }
 
 function MovDistribuisci() {
-  Transfer.src = "images/cards/back.png";
+  Transfer.src = "../images/cards/back.png";
 
   Transfer.style.top = "200px";
 
@@ -317,7 +317,7 @@ function PrimaN2() {
   } else {
     clearTimeout(myTimerPrimaN2);
 
-    ImgNord2.src = "images/cards/back.png";
+    ImgNord2.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -355,7 +355,7 @@ function PrimaN1() {
   } else {
     clearTimeout(myTimerPrimaN1);
 
-    ImgNord1.src = "images/cards/back.png";
+    ImgNord1.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -387,7 +387,7 @@ function PrimaN0() {
   } else {
     clearTimeout(myTimerPrimaN0);
 
-    ImgNord0.src = "images/cards/back.png";
+    ImgNord0.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -419,7 +419,7 @@ function PrimaS2() {
   } else {
     clearTimeout(myTimerPrimaS2);
 
-    ImgSud2.src = "images/cards/back.png";
+    ImgSud2.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -429,7 +429,7 @@ function PrimaS2() {
 
     LeftPos = 70;
 
-    ImgSud2.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud2.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[2] = CaTall[QCaTall];
 
@@ -465,7 +465,7 @@ function PrimaS1() {
   } else {
     clearTimeout(myTimerPrimaS1);
 
-    ImgSud1.src = "images/cards/back.png";
+    ImgSud1.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -475,7 +475,7 @@ function PrimaS1() {
 
     LeftPos = 70;
 
-    ImgSud1.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud1.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[1] = CaTall[QCaTall];
 
@@ -503,7 +503,7 @@ function PrimaS0() {
   } else {
     clearTimeout(myTimerPrimaS0);
 
-    ImgSud0.src = "images/cards/back.png";
+    ImgSud0.src = "../images/cards/back.png";
 
     Transfer.style.top = "200px";
 
@@ -513,7 +513,7 @@ function PrimaS0() {
 
     LeftPos = 70;
 
-    ImgSud0.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud0.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[0] = CaTall[QCaTall];
 
@@ -528,19 +528,19 @@ function MostraCarte() {
 
   //carica e mostra le carte sul tavolo
 
-  ImgNord0.src = "images/cards/back.png";
+  ImgNord0.src = "../images/cards/back.png";
 
   CaNord[0] = CaTall[QCaTall];
 
   QCaTall = QCaTall - 1;
 
-  ImgNord1.src = "images/cards/back.png";
+  ImgNord1.src = "../images/cards/back.png";
 
   CaNord[1] = CaTall[QCaTall];
 
   QCaTall = QCaTall - 1;
 
-  ImgNord2.src = "images/cards/back.png";
+  ImgNord2.src = "../images/cards/back.png";
 
   CaNord[2] = CaTall[QCaTall];
 
@@ -566,7 +566,7 @@ function IMGSUD0_onmousedown() {
 
   ImgSud2.disabled = true;
 
-  Transfer.src = "images/cards/" + CaSud[0] + ".png";
+  Transfer.src = "../images/cards/" + CaSud[0] + ".png";
 
   Transfer.style.top = "350px";
 
@@ -574,7 +574,7 @@ function IMGSUD0_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud0.src = "images/cards/vuota4.png";
+  ImgSud0.src = "../images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -596,7 +596,7 @@ function IMGSUD1_onmousedown() {
 
   ImgSud2.disabled = true;
 
-  Transfer.src = "images/cards/" + CaSud[1] + ".png";
+  Transfer.src = "../images/cards/" + CaSud[1] + ".png";
 
   Transfer.style.top = "350px";
 
@@ -604,7 +604,7 @@ function IMGSUD1_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud1.src = "images/cards/vuota4.png";
+  ImgSud1.src = "../images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -626,7 +626,7 @@ function IMGSUD2_onmousedown() {
 
   ImgSud2.disabled = true;
 
-  Transfer.src = "images/cards/" + CaSud[2] + ".png";
+  Transfer.src = "../images/cards/" + CaSud[2] + ".png";
 
   Transfer.style.top = "350px";
 
@@ -634,7 +634,7 @@ function IMGSUD2_onmousedown() {
 
   Transfer.style.visibility = "visible";
 
-  ImgSud2.src = "images/cards/vuota4.png";
+  ImgSud2.src = "../images/cards/vuota4.png";
 
   TopPos = 350;
 
@@ -667,11 +667,11 @@ function S0Tall() {
   } else {
     clearTimeout(myTimerS0Tall);
 
-    ImgTabSud.src = "images/cards/" + CaImgTabSud + ".png";
+    ImgTabSud.src = "../images/cards/" + CaImgTabSud + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     if (FlagPrimoMano == "Sud") {
       RispondeNord();
@@ -721,11 +721,11 @@ function S1Tall() {
   } else {
     clearTimeout(myTimerS1Tall);
 
-    ImgTabSud.src = "images/cards/" + CaImgTabSud + ".png";
+    ImgTabSud.src = "../images/cards/" + CaImgTabSud + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     if (FlagPrimoMano == "Sud") {
       RispondeNord();
@@ -771,11 +771,11 @@ function S2Tall() {
   } else {
     clearTimeout(myTimerS2Tall);
 
-    ImgTabSud.src = "images/cards/" + CaImgTabSud + ".png";
+    ImgTabSud.src = "../images/cards/" + CaImgTabSud + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     if (FlagPrimoMano == "Sud") {
       RispondeNord();
@@ -824,7 +824,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) > Math.round(CaImgTabSud % 100)
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -832,7 +832,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -848,7 +848,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -856,7 +856,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -872,7 +872,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -880,7 +880,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -915,7 +915,7 @@ function RispondeNord() {
           Math.round(CaNord[P] / 100) != SB
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -923,7 +923,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -939,7 +939,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -947,7 +947,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -963,7 +963,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -971,7 +971,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1007,7 +1007,7 @@ function RispondeNord() {
           Math.round(CaNord[P] / 100) != SB
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1015,7 +1015,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1031,7 +1031,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1039,7 +1039,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1055,7 +1055,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1063,7 +1063,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1098,7 +1098,7 @@ function RispondeNord() {
           Math.round(CaNord[P] / 100) != SB
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1106,7 +1106,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1122,7 +1122,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1130,7 +1130,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1146,7 +1146,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1154,7 +1154,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1190,7 +1190,7 @@ function RispondeNord() {
           Math.round(CaNord[P] / 100) != SB
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1198,7 +1198,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1214,7 +1214,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1222,7 +1222,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1238,7 +1238,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1246,7 +1246,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1282,7 +1282,7 @@ function RispondeNord() {
           Math.round(CaNord[P] / 100) != SB
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1290,7 +1290,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1306,7 +1306,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1314,7 +1314,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1330,7 +1330,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1338,7 +1338,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1372,7 +1372,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1380,7 +1380,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1396,7 +1396,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1404,7 +1404,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1420,7 +1420,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1428,7 +1428,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1462,7 +1462,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1470,7 +1470,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1486,7 +1486,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1494,7 +1494,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1510,7 +1510,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1518,7 +1518,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1556,7 +1556,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) > Math.round(CaImgTabSud % 100)
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1564,7 +1564,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1580,7 +1580,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1588,7 +1588,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1604,7 +1604,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1612,7 +1612,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1647,7 +1647,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1655,7 +1655,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1671,7 +1671,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1679,7 +1679,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1695,7 +1695,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1703,7 +1703,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1738,7 +1738,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1746,7 +1746,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1762,7 +1762,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1770,7 +1770,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1786,7 +1786,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1794,7 +1794,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1829,7 +1829,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1837,7 +1837,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1853,7 +1853,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1861,7 +1861,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1877,7 +1877,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1885,7 +1885,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1920,7 +1920,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1928,7 +1928,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1944,7 +1944,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1952,7 +1952,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -1968,7 +1968,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -1976,7 +1976,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2011,7 +2011,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2019,7 +2019,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2035,7 +2035,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2043,7 +2043,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2059,7 +2059,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2067,7 +2067,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2102,7 +2102,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2110,7 +2110,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2126,7 +2126,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2134,7 +2134,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2150,7 +2150,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2158,7 +2158,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2194,7 +2194,7 @@ function RispondeNord() {
         Math.round(CaNord[P] / 100) == Seme
       ) {
         if (P == 0) {
-          Transfer.src = "images/cards/" + CaNord[0] + ".png";
+          Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
           Transfer.style.top = "50px";
 
@@ -2202,7 +2202,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2218,7 +2218,7 @@ function RispondeNord() {
         }
 
         if (P == 1) {
-          Transfer.src = "images/cards/" + CaNord[1] + ".png";
+          Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
           Transfer.style.top = "50px";
 
@@ -2226,7 +2226,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2242,7 +2242,7 @@ function RispondeNord() {
         }
 
         if (P == 2) {
-          Transfer.src = "images/cards/" + CaNord[2] + ".png";
+          Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
           Transfer.style.top = "50px";
 
@@ -2250,7 +2250,7 @@ function RispondeNord() {
 
           Transfer.style.visibility = "visible";
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           TopPos = 50;
 
@@ -2283,7 +2283,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2291,7 +2291,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2307,7 +2307,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2315,7 +2315,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2331,7 +2331,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2339,7 +2339,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2373,7 +2373,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2381,7 +2381,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2397,7 +2397,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2405,7 +2405,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2421,7 +2421,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2429,7 +2429,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2463,7 +2463,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2471,7 +2471,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2487,7 +2487,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2495,7 +2495,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2511,7 +2511,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2519,7 +2519,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2553,7 +2553,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2561,7 +2561,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2577,7 +2577,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2585,7 +2585,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2601,7 +2601,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2609,7 +2609,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2645,7 +2645,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2653,7 +2653,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2669,7 +2669,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2677,7 +2677,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2693,7 +2693,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2701,7 +2701,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2735,7 +2735,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2743,7 +2743,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2759,7 +2759,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2767,7 +2767,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2783,7 +2783,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2791,7 +2791,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2825,7 +2825,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2833,7 +2833,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2849,7 +2849,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2857,7 +2857,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2873,7 +2873,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2881,7 +2881,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2918,7 +2918,7 @@ function RispondeNord() {
           //'''''''qui ho qualche dubbio ad es. 3 su asso???
 
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2926,7 +2926,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2942,7 +2942,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2950,7 +2950,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -2966,7 +2966,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -2974,7 +2974,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3008,7 +3008,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3016,7 +3016,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3032,7 +3032,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3040,7 +3040,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3056,7 +3056,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3064,7 +3064,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3101,7 +3101,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) > Math.round(CaImgTabSud % 100)
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3109,7 +3109,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3125,7 +3125,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3133,7 +3133,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3149,7 +3149,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3157,7 +3157,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3191,7 +3191,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3199,7 +3199,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3215,7 +3215,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3223,7 +3223,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3239,7 +3239,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3247,7 +3247,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3281,7 +3281,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3289,7 +3289,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3305,7 +3305,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3313,7 +3313,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3329,7 +3329,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3337,7 +3337,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3371,7 +3371,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3379,7 +3379,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3395,7 +3395,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3403,7 +3403,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3419,7 +3419,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3427,7 +3427,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3461,7 +3461,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3469,7 +3469,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3485,7 +3485,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3493,7 +3493,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3509,7 +3509,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3517,7 +3517,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3551,7 +3551,7 @@ function RispondeNord() {
           Math.round(CaNord[P] % 100) == y
         ) {
           if (P == 0) {
-            Transfer.src = "images/cards/" + CaNord[0] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3559,7 +3559,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3575,7 +3575,7 @@ function RispondeNord() {
           }
 
           if (P == 1) {
-            Transfer.src = "images/cards/" + CaNord[1] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3583,7 +3583,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3599,7 +3599,7 @@ function RispondeNord() {
           }
 
           if (P == 2) {
-            Transfer.src = "images/cards/" + CaNord[2] + ".png";
+            Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
             Transfer.style.top = "50px";
 
@@ -3607,7 +3607,7 @@ function RispondeNord() {
 
             Transfer.style.visibility = "visible";
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
@@ -3633,7 +3633,7 @@ function RispondeNord() {
   for (var P = 0; P < 3; P++) {
     if (CaNord[P] != 0) {
       if (P == 0) {
-        Transfer.src = "images/cards/" + CaNord[0] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[0] + ".png";
 
         Transfer.style.top = "50px";
 
@@ -3641,7 +3641,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord0.src = "images/cards/vuota4.png";
+        ImgNord0.src = "../images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3657,7 +3657,7 @@ function RispondeNord() {
       }
 
       if (P == 1) {
-        Transfer.src = "images/cards/" + CaNord[1] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[1] + ".png";
 
         Transfer.style.top = "50px";
 
@@ -3665,7 +3665,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord1.src = "images/cards/vuota4.png";
+        ImgNord1.src = "../images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3681,7 +3681,7 @@ function RispondeNord() {
       }
 
       if (P == 2) {
-        Transfer.src = "images/cards/" + CaNord[2] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[2] + ".png";
 
         Transfer.style.top = "50px";
 
@@ -3689,7 +3689,7 @@ function RispondeNord() {
 
         Transfer.style.visibility = "visible";
 
-        ImgNord2.src = "images/cards/vuota4.png";
+        ImgNord2.src = "../images/cards/vuota4.png";
 
         TopPos = 50;
 
@@ -3727,11 +3727,11 @@ function MovGiocaNord0() {
   } else {
     clearTimeout(myTimerMovGiocaNord0);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     Decide_chi_prende();
 
@@ -3763,11 +3763,11 @@ function MovGiocaNord1() {
   } else {
     clearTimeout(myTimerMovGiocaNord1);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     Decide_chi_prende();
 
@@ -3805,11 +3805,11 @@ function MovGiocaNord2() {
   } else {
     clearTimeout(myTimerMovGiocaNord2);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     Decide_chi_prende();
 
@@ -3925,11 +3925,11 @@ function Decide_chi_prende() {
 
     LeftPos = 250;
 
-    Transfer.src = "images/cards/" + CaImgTabNord + ".png";
+    Transfer.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "visible";
 
-    ImgTabNord.src = "images/cards/vuota4.png";
+    ImgTabNord.src = "../images/cards/vuota4.png";
 
     PuntNord = PuntNord + PuntMano;
 
@@ -3949,11 +3949,11 @@ function Decide_chi_prende() {
 
     Transfer.style.left = NewLeft;
 
-    Transfer.src = "images/cards/" + CaImgTabSud + ".png";
+    Transfer.src = "../images/cards/" + CaImgTabSud + ".png";
 
     Transfer.style.visibility = "visible";
 
-    ImgTabSud.src = "images/cards/vuota4.png";
+    ImgTabSud.src = "../images/cards/vuota4.png";
 
     PuntSud = PuntSud + PuntMano;
 
@@ -4060,14 +4060,14 @@ function Nord() {
 
           CaImgTabNord = CaNord[P];
 
-          Transfer.src = "images/cards/" + CaNord[P] + ".png";
+          Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
           if (P == 0) {
             TopPos = 50;
 
             LeftPos = 200;
 
-            ImgNord0.src = "images/cards/vuota4.png";
+            ImgNord0.src = "../images/cards/vuota4.png";
 
             N0Tall();
           }
@@ -4077,19 +4077,19 @@ function Nord() {
 
             LeftPos = 300;
 
-            ImgNord1.src = "images/cards/vuota4.png";
+            ImgNord1.src = "../images/cards/vuota4.png";
 
             N1Tall();
           }
 
           if (P == 2) {
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             TopPos = 50;
 
             LeftPos = 400;
 
-            ImgNord2.src = "images/cards/vuota4.png";
+            ImgNord2.src = "../images/cards/vuota4.png";
 
             N2Tall();
           }
@@ -4112,14 +4112,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4129,7 +4129,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4139,7 +4139,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4161,14 +4161,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4178,7 +4178,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4188,7 +4188,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4210,14 +4210,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4227,7 +4227,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4237,7 +4237,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4259,14 +4259,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4276,7 +4276,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4286,7 +4286,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4308,14 +4308,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4325,7 +4325,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4335,7 +4335,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4357,14 +4357,14 @@ function Nord() {
 
         CaImgTabNord = CaNord[P];
 
-        Transfer.src = "images/cards/" + CaNord[P] + ".png";
+        Transfer.src = "../images/cards/" + CaNord[P] + ".png";
 
         if (P == 0) {
           TopPos = 50;
 
           LeftPos = 200;
 
-          ImgNord0.src = "images/cards/vuota4.png";
+          ImgNord0.src = "../images/cards/vuota4.png";
 
           N0Tall();
         }
@@ -4374,7 +4374,7 @@ function Nord() {
 
           LeftPos = 300;
 
-          ImgNord1.src = "images/cards/vuota4.png";
+          ImgNord1.src = "../images/cards/vuota4.png";
 
           N1Tall();
         }
@@ -4384,7 +4384,7 @@ function Nord() {
 
           LeftPos = 400;
 
-          ImgNord2.src = "images/cards/vuota4.png";
+          ImgNord2.src = "../images/cards/vuota4.png";
 
           N2Tall();
         }
@@ -4415,13 +4415,13 @@ function N0Tall() {
   } else {
     clearTimeout(myTimerN0Tall);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
-    ImgNord0.src = "images/cards/vuota4.png";
+    ImgNord0.src = "../images/cards/vuota4.png";
 
     CaNord[0] = 0;
 
@@ -4451,13 +4451,13 @@ function N1Tall() {
   } else {
     clearTimeout(myTimerN1Tall);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
-    ImgNord1.src = "images/cards/vuota4.png";
+    ImgNord1.src = "../images/cards/vuota4.png";
 
     CaNord[1] = 0;
 
@@ -4495,13 +4495,13 @@ function N2Tall() {
   } else {
     clearTimeout(myTimerN2Tall);
 
-    ImgTabNord.src = "images/cards/" + CaImgTabNord + ".png";
+    ImgTabNord.src = "../images/cards/" + CaImgTabNord + ".png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
-    ImgNord2.src = "images/cards/vuota4.png";
+    ImgNord2.src = "../images/cards/vuota4.png";
 
     CaNord[2] = 0;
 
@@ -4529,13 +4529,13 @@ function Nord_su_Sud() {
   } else {
     clearTimeout(myTimerNord_su_Sud);
 
-    ImgTabSud.src = "images/cards/vuota4.png";
+    ImgTabSud.src = "../images/cards/vuota4.png";
 
-    ImgTabNord.src = "images/cards/vuota4.png";
+    ImgTabNord.src = "../images/cards/vuota4.png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     Distribuisci_dopoPrima();
   }
@@ -4557,13 +4557,13 @@ function Sud_su_Nord() {
   } else {
     clearTimeout(myTimerSud_su_Nord);
 
-    ImgTabSud.src = "images/cards/vuota4.png";
+    ImgTabSud.src = "../images/cards/vuota4.png";
 
-    ImgTabNord.src = "images/cards/vuota4.png";
+    ImgTabNord.src = "../images/cards/vuota4.png";
 
     Transfer.style.visibility = "hidden";
 
-    Transfer.src = "images/cards/back.png";
+    Transfer.src = "../images/cards/back.png";
 
     Distribuisci_dopoPrima();
   }
@@ -4591,7 +4591,7 @@ function DopoN0() {
   } else {
     clearTimeout(myTimerDopoN0);
 
-    ImgNord0.src = "images/cards/back.png";
+    ImgNord0.src = "../images/cards/back.png";
 
     CaNord[0] = CaTall[QCaTall];
 
@@ -4651,7 +4651,7 @@ function DopoN1() {
   } else {
     clearTimeout(myTimerDopoN1);
 
-    ImgNord1.src = "images/cards/back.png";
+    ImgNord1.src = "../images/cards/back.png";
 
     CaNord[1] = CaTall[QCaTall];
 
@@ -4711,7 +4711,7 @@ function DopoN2() {
   } else {
     clearTimeout(myTimerDopoN2);
 
-    ImgNord2.src = "images/cards/back.png";
+    ImgNord2.src = "../images/cards/back.png";
 
     CaNord[2] = CaTall[QCaTall];
 
@@ -4771,9 +4771,9 @@ function DopoS0() {
   } else {
     clearTimeout(myTimerDopoS0);
 
-    ImgSud0.src = "images/cards/back.png";
+    ImgSud0.src = "../images/cards/back.png";
 
-    ImgSud0.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud0.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[0] = CaTall[QCaTall];
 
@@ -4831,7 +4831,7 @@ function DopoS1() {
   } else {
     clearTimeout(myTimerDopoS1);
 
-    ImgSud1.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud1.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[1] = CaTall[QCaTall];
 
@@ -4889,7 +4889,7 @@ function DopoS2() {
   } else {
     clearTimeout(myTimerDopoS2);
 
-    ImgSud2.src = "images/cards/" + CaTall[QCaTall] + ".png";
+    ImgSud2.src = "../images/cards/" + CaTall[QCaTall] + ".png";
 
     CaSud[2] = CaTall[QCaTall];
 
@@ -4927,7 +4927,7 @@ function DopoS2() {
 
 function Carte_finite() {
   if (QCaTall == 1) {
-    Pozzo.src = "images/cards/vuota4.png";
+    Pozzo.src = "../images/cards/vuota4.png";
   }
 
   if (QCaTall == 1) {
@@ -4943,7 +4943,7 @@ function Carte_finite() {
   }
 
   if (QCaTall == 1) {
-    Transfer.src = "images/cards/" + CaTall[1] + ".png";
+    Transfer.src = "../images/cards/" + CaTall[1] + ".png";
   }
 }
 
