@@ -138,6 +138,7 @@ button {
   overflow: hidden;
   left:50%;
   top:-30px;
+  cursor: pointer;
  }
  
  button::before {
