@@ -1,4 +1,45 @@
-body{
-    background-color: black;
-    color: white;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  float: left;
+  width: 25%;
+  color: white;
+  padding: 10px;
+  height: 500px;
+  text-align: center;
+}
+
+.first {
+  background-color: tomato;
+}
+
+.second {
+  background-color: teal;
+}
+
+.third {
+  background-color: rgb(166, 71, 255);
+}
+
+.fourth {
+  background-color: rgb(255, 71, 194);
+}
+
+.container:after {
+  clear: both;
+}
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
