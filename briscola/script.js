@@ -71,6 +71,16 @@ var nDopo;
 
 var sDopo;
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 function mnuNew_onclick() {
   document.getElementById("mnuNew").disabled = true;
   document.getElementById("scoreboard").style.display = 'none';
@@ -313,7 +323,7 @@ function PrimaN2() {
   LeftPos = LeftPos + 4;
 
   if (TopPos > 50) {
-    var myTimerPrimaN2 = setTimeout("PrimaN2()", 15);
+    var myTimerPrimaN2 = setTimeout("PrimaN2()", 12);
   } else {
     clearTimeout(myTimerPrimaN2);
 
@@ -351,7 +361,7 @@ function PrimaN1() {
   LeftPos = LeftPos + 3;
 
   if (TopPos > 50) {
-    var myTimerPrimaN1 = setTimeout("PrimaN1()", 15);
+    var myTimerPrimaN1 = setTimeout("PrimaN1()", 12);
   } else {
     clearTimeout(myTimerPrimaN1);
 
@@ -383,7 +393,7 @@ function PrimaN0() {
   LeftPos = LeftPos + 3;
 
   if (TopPos > 50) {
-    var myTimerPrimaN0 = setTimeout("PrimaN0()", 15);
+    var myTimerPrimaN0 = setTimeout("PrimaN0()", 12);
   } else {
     clearTimeout(myTimerPrimaN0);
 
@@ -415,7 +425,7 @@ function PrimaS2() {
   LeftPos = LeftPos + 4;
 
   if (TopPos < 350 || LeftPos > 400) {
-    var myTimerPrimaS2 = setTimeout("PrimaS2()", 15);
+    var myTimerPrimaS2 = setTimeout("PrimaS2()", 12);
   } else {
     clearTimeout(myTimerPrimaS2);
 
@@ -461,7 +471,7 @@ function PrimaS1() {
   LeftPos = LeftPos + 3;
 
   if (TopPos < 350 || LeftPos > 300) {
-    var myTimerPrimaS1 = setTimeout("PrimaS1()", 15);
+    var myTimerPrimaS1 = setTimeout("PrimaS1()", 12);
   } else {
     clearTimeout(myTimerPrimaS1);
 
@@ -499,7 +509,7 @@ function PrimaS0() {
   LeftPos = LeftPos + 2;
 
   if (TopPos < 350 || LeftPos > 200) {
-    var myTimerPrimaS0 = setTimeout("PrimaS0()", 15);
+    var myTimerPrimaS0 = setTimeout("PrimaS0()", 12);
   } else {
     clearTimeout(myTimerPrimaS0);
 
@@ -663,7 +673,7 @@ function S0Tall() {
   LeftPos = LeftPos + 3;
 
   if (TopPos > 200) {
-    var myTimerS0Tall = setTimeout("S0Tall()", 15);
+    var myTimerS0Tall = setTimeout("S0Tall()", 12);
   } else {
     clearTimeout(myTimerS0Tall);
 
@@ -717,7 +727,7 @@ function S1Tall() {
   }
 
   if (TopPos > 200) {
-    var myTimerS1Tall = setTimeout("S1Tall()", 15);
+    var myTimerS1Tall = setTimeout("S1Tall()", 12);
   } else {
     clearTimeout(myTimerS1Tall);
 
@@ -767,7 +777,7 @@ function S2Tall() {
   LeftPos = LeftPos - 1;
 
   if (TopPos > 200) {
-    var myTimerS2Tall = setTimeout("S2Tall()", 15);
+    var myTimerS2Tall = setTimeout("S2Tall()", 12);
   } else {
     clearTimeout(myTimerS2Tall);
 
@@ -3723,7 +3733,7 @@ function MovGiocaNord0() {
   LeftPos = LeftPos + 1;
 
   if (TopPos < 200) {
-    myTimerMovGiocaNord0 = window.setTimeout("MovGiocaNord0()", 15);
+    myTimerMovGiocaNord0 = window.setTimeout("MovGiocaNord0()", 12);
   } else {
     clearTimeout(myTimerMovGiocaNord0);
 
@@ -3759,7 +3769,7 @@ function MovGiocaNord1() {
   LeftPos = LeftPos - 1;
 
   if (TopPos < 200) {
-    myTimerMovGiocaNord1 = window.setTimeout("MovGiocaNord1()", 15);
+    myTimerMovGiocaNord1 = window.setTimeout("MovGiocaNord1()", 12);
   } else {
     clearTimeout(myTimerMovGiocaNord1);
 
@@ -3801,7 +3811,7 @@ function MovGiocaNord2() {
   }
 
   if (TopPos < 200) {
-    myTimerMovGiocaNord2 = window.setTimeout("MovGiocaNord2()", 15);
+    myTimerMovGiocaNord2 = window.setTimeout("MovGiocaNord2()", 12);
   } else {
     clearTimeout(myTimerMovGiocaNord2);
 
@@ -4411,7 +4421,7 @@ function N0Tall() {
   LeftPos = LeftPos + 1;
 
   if (TopPos < 200) {
-    var myTimerN0Tall = setTimeout("N0Tall()", 15);
+    var myTimerN0Tall = setTimeout("N0Tall()", 12);
   } else {
     clearTimeout(myTimerN0Tall);
 
@@ -4447,7 +4457,7 @@ function N1Tall() {
   LeftPos = LeftPos - 1;
 
   if (TopPos < 200) {
-    var myTimerN1Tall = setTimeout("N1Tall()", 15);
+    var myTimerN1Tall = setTimeout("N1Tall()", 12);
   } else {
     clearTimeout(myTimerN1Tall);
 
@@ -4491,7 +4501,7 @@ function N2Tall() {
   }
 
   if (TopPos < 200) {
-    var myTimerN2Tall = setTimeout("N2Tall()", 15);
+    var myTimerN2Tall = setTimeout("N2Tall()", 12);
   } else {
     clearTimeout(myTimerN2Tall);
 
@@ -4525,7 +4535,7 @@ function Nord_su_Sud() {
   LeftPos = LeftPos + 4;
 
   if (LeftPos < 350) {
-    var myTimerNord_su_Sud = window.setTimeout("Nord_su_Sud()", 15);
+    var myTimerNord_su_Sud = window.setTimeout("Nord_su_Sud()", 12);
   } else {
     clearTimeout(myTimerNord_su_Sud);
 
@@ -4553,7 +4563,7 @@ function Sud_su_Nord() {
   LeftPos = LeftPos - 4;
 
   if (LeftPos > 249) {
-    myTimerSud_su_Nord = window.setTimeout("Sud_su_Nord()", 15);
+    myTimerSud_su_Nord = window.setTimeout("Sud_su_Nord()", 12);
   } else {
     clearTimeout(myTimerSud_su_Nord);
 
@@ -4587,7 +4597,7 @@ function DopoN0() {
   LeftPos = LeftPos + 3;
 
   if (TopPos > 50) {
-    var myTimerDopoN0 = setTimeout("DopoN0()", 15);
+    var myTimerDopoN0 = setTimeout("DopoN0()", 12);
   } else {
     clearTimeout(myTimerDopoN0);
 
@@ -4647,7 +4657,7 @@ function DopoN1() {
   LeftPos = LeftPos + 3;
 
   if (TopPos > 50) {
-    var myTimerDopoN1 = setTimeout("DopoN1()", 15);
+    var myTimerDopoN1 = setTimeout("DopoN1()", 12);
   } else {
     clearTimeout(myTimerDopoN1);
 
@@ -4707,7 +4717,7 @@ function DopoN2() {
   LeftPos = LeftPos + 4;
 
   if (TopPos > 50) {
-    var myTimerDopoN2 = setTimeout("DopoN2()", 15);
+    var myTimerDopoN2 = setTimeout("DopoN2()", 12);
   } else {
     clearTimeout(myTimerDopoN2);
 
@@ -4767,7 +4777,7 @@ function DopoS0() {
   LeftPos = LeftPos + 2;
 
   if (TopPos < 350 || LeftPos > 200) {
-    var myTimerDopoS0 = setTimeout("DopoS0()", 15);
+    var myTimerDopoS0 = setTimeout("DopoS0()", 12);
   } else {
     clearTimeout(myTimerDopoS0);
 
@@ -4827,7 +4837,7 @@ function DopoS1() {
   LeftPos = LeftPos + 3;
 
   if (TopPos < 350 || LeftPos > 300) {
-    var myTimerDopoS1 = setTimeout("DopoS1()", 15);
+    var myTimerDopoS1 = setTimeout("DopoS1()", 12);
   } else {
     clearTimeout(myTimerDopoS1);
 
@@ -4885,7 +4895,7 @@ function DopoS2() {
   LeftPos = LeftPos + 4;
 
   if (TopPos < 350 || LeftPos > 400) {
-    var myTimerDopoS2 = setTimeout("DopoS2()", 15);
+    var myTimerDopoS2 = setTimeout("DopoS2()", 12);
   } else {
     clearTimeout(myTimerDopoS2);
 
